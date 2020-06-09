@@ -1,7 +1,6 @@
 <?php
 include 'db_fns.php';
 
-if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $business = $_POST['business'];
     $description = $_POST['description'];
@@ -26,4 +25,4 @@ if(isset($_POST['submit'])){
 
     echo json_encode($response);
 
-}
+    header('Location:index.php');
